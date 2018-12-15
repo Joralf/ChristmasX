@@ -6,6 +6,7 @@ key_jump = 0;
 key_shoot = 0;
 firing = 0;
 
+if (gamepad_button_check_pressed(0, gp_face4)) game_restart();
 if (gamepad_button_check_pressed(0, gp_face1)) key_jump = 1;
 if (abs(gamepad_axis_value(0, gp_axislh)) > 0.2) move = gamepad_axis_value(0, gp_axislh)
 if (gamepad_button_check_pressed(0, gp_shoulderrb)) key_shoot = 1;
